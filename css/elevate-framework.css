@@ -146,6 +146,7 @@ button {
 .f-d-50 {font-size: 2.6vw !important; /* 50px */ }
 .f-d-52 {font-size: 2.7vw !important; /* 52px */ }
 .f-d-55 {font-size: 2.86vw !important; /* 55px */ }
+.f-d-58 {font-size: 3vw !important; /* 58px */ }
 .f-d-60 {font-size: 3.125vw !important; /* 60px */ }
 .f-d-65 {font-size: 3.38vw !important; /* 65px */ }
 .f-d-70 {font-size: 3.64vw !important; /* 70px */ }
@@ -196,6 +197,7 @@ button {
   .f-m-90 {font-size: 12vw !important; /* 90px */ }
   .f-m-95 {font-size: 12.66vw !important; /* 95px */ }
   .f-m-100 {font-size: 13.3vw !important; /* 100px */ }
+  .f-m-105 {font-size: 14vw !important; /* 105px */ }
 }
 
 .ultra-light {
@@ -299,24 +301,24 @@ h6 {
 
 /* #Accordion
 ================================================== */
-.accordion .simbol .minus {
+.collapsible > .collapse-toggler .simbol .minus {
   display: none;
 }
 
-.accordion .show .simbol .minus {
+.collapsible.show > .collapse-toggler .simbol .minus {
   display: block;
 }
 
-.accordion .show .simbol .plus {
+.collapsible.show > .collapse-toggler .simbol .plus {
   display: none;
 }
 
-.accordion .collapse {
+.collapse {
   overflow: hidden;
   height: 0;
 }
 
-.accordion .collapse-toggler {
+.collapse-toggler {
   cursor: pointer;
   user-select: none;
 }
@@ -353,4 +355,25 @@ h6 {
   padding-right: 7px;
   cursor: pointer;
   user-select: none;
+}
+
+/* #Dropdown
+================================================== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+}
+
+.dropdown.show .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
 }

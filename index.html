@@ -5,10 +5,8 @@
   <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title></title>
-
-  <!-- Font -->
+  <meta name="description" content="Carmel">
+  <title>Carmel</title>
 
   <!-- Style (Vendor) -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -21,13 +19,581 @@
   <link rel="icon" href="img/favicon.png">
 </head>
 
-<body>
+<body class="home-page">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <!-- Hamburger -->
+      <div class="header-hamburger d-mobile">
+        <a href="#">
+          <img src="img/icons/hamburger.svg" alt="carmel-img">
+        </a>
+      </div>
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="#">
+          <img src="img/global/logo.svg" alt="carmel-img">
+        </a>
+      </div>
+      <!-- Menu -->
+      <div class="header-menu d-desktop">
+        <div class="header-links">
+          <ul class="f-d-20">
+            <!-- Item -->
+            <li>
+              <a href="#">אודות</a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#">מותגי כרמל</a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#">כרמל סיגנצ'ר</a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#">מותגים נוספים</a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#">מרכז התרבות היין</a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#">צור קשר</a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#">חדשות ועדכונים</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Action -->
+      <div class="header-action">
+        <div class="header-language">
+          <select>
+            <option value="1">HEB</option>
+            <option value="2">ENG</option>
+          </select>
+        </div>
+        <div class="header-search">
+          <a href="#">
+            <img src="img/icons/search.svg" alt="carmel-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide -->
+        <div class="swiper-slide">
+          <div class="img">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/banner.jpg">
+              <img src="img/home/banner-mobile.jpg" alt="carmel-img">
+            </picture>
+          </div>
+          <div class="text">
+            <h1 class="f-d-60 f-m-80">
+              סדרות היינות
+              <br>המובילים בישראל
+            </h1>
+            <p class="f-d-24 f-m-36">בואו להכיר מגוון הסדרות יינות איכותית שלנו 
+              המיוצרים ומייצגים את מיטב אזורי הכרמים של 
+              יקבי כרמל</p>
+            <a href="#" class="btn btn-primary">גלו את יינות שלנו</a>
+          </div>
+        </div>
+        <!-- Slide -->
+        <div class="swiper-slide">
+          <div class="img">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/banner.jpg">
+              <img src="img/home/banner-mobile.jpg" alt="carmel-img">
+            </picture>
+          </div>
+          <div class="text">
+            <h2 class="f-d-60 f-m-80">
+              סדרות היינות
+              <br>המובילים בישראל
+            </h2>
+            <p class="f-d-24 f-m-36">בואו להכיר מגוון הסדרות יינות איכותית שלנו 
+              המיוצרים ומייצגים את מיטב אזורי הכרמים של 
+              יקבי כרמל</p>
+            <a href="#" class="btn btn-primary">גלו את יינות שלנו</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-arrows">
+        <div class="prev"><img src="img/icons/arrow-right.svg" alt="carmel-img"></div>
+        <div class="next"><img src="img/icons/arrow-left.svg" alt="carmel-img"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home Products -->
+  <div class="home-products">
+    <div class="container">
+      <ul class="products">
+        <!-- Product -->
+        <li class="product">
+          <div class="img">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/product-img-1.jpg">
+              <img src="img/home/product-img-1-mobile.jpg" alt="carmel-img">
+            </picture>
+          </div>
+          <div class="text">
+            <h3 class="f-d-60 f-m-55">יינות
+              <br>כרמל</h3>
+            <div class="hidden">
+              <p class="f-d-20 f-m-30"> מאז 130 שנה שאנחנו לומדים, כל יום מחדש, את האדמה, את האקלים ואת תהליך הפקת היין באזורי הגידול של ישראל</p>
+              <a href="#" class="btn btn-secondary">לצפייה ביינות</a>
+            </div>
+          </div>
+        </li>
+        <!-- Product -->
+        <li class="product">
+          <div class="img">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/product-img-2.jpg">
+              <img src="img/home/product-img-2-mobile.jpg" alt="carmel-img">
+            </picture>
+          </div>
+          <div class="text">
+            <h3 class="f-d-60 f-m-55">יינות
+              <br>כרמל</h3>
+            <div class="hidden">
+              <p class="f-d-20 f-m-30"> מאז 130 שנה שאנחנו לומדים, כל יום מחדש, את האדמה, את האקלים ואת תהליך הפקת היין באזורי הגידול של ישראל</p>
+              <a href="#" class="btn btn-secondary">לצפייה ביינות</a>
+            </div>
+          </div>
+        </li>
+        <!-- Product -->
+        <li class="product">
+          <div class="img">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/product-img-3.jpg">
+              <img src="img/home/product-img-3-mobile.jpg" alt="carmel-img">
+            </picture>
+          </div>
+          <div class="text">
+            <h3 class="f-d-60 f-m-55">יינות
+              <br>כרמל</h3>
+            <div class="hidden">
+              <p class="f-d-20 f-m-30"> מאז 130 שנה שאנחנו לומדים, כל יום מחדש, את האדמה, את האקלים ואת תהליך הפקת היין באזורי הגידול של ישראל</p>
+              <a href="#" class="btn btn-secondary">לצפייה ביינות</a>
+            </div>
+          </div>
+        </li>
+        <!-- Product -->
+        <li class="product">
+          <div class="img">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/product-img-4.jpg">
+              <img src="img/home/product-img-4-mobile.jpg" alt="carmel-img">
+            </picture>
+          </div>
+          <div class="text">
+            <h3 class="f-d-60 f-m-55">יינות
+              <br>כרמל</h3>
+            <div class="hidden">
+              <p class="f-d-20 f-m-30"> מאז 130 שנה שאנחנו לומדים, כל יום מחדש, את האדמה, את האקלים ואת תהליך הפקת היין באזורי הגידול של ישראל</p>
+              <a href="#" class="btn btn-secondary">לצפייה ביינות</a>
+            </div>
+          </div>
+        </li>
+        <!-- Product -->
+        <li class="product">
+          <div class="img">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/product-img-5.jpg">
+              <img src="img/home/product-img-5-mobile.jpg" alt="carmel-img">
+            </picture>
+          </div>
+          <div class="text">
+            <h3 class="f-d-60 f-m-55">יינות
+              <br>כרמל</h3>
+            <div class="hidden">
+              <p class="f-d-20 f-m-30"> מאז 130 שנה שאנחנו לומדים, כל יום מחדש, את האדמה, את האקלים ואת תהליך הפקת היין באזורי הגידול של ישראל</p>
+              <a href="#" class="btn btn-secondary">לצפייה ביינות</a>
+            </div>
+          </div>
+        </li>
+        <!-- Product -->
+        <li class="product">
+          <div class="img">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/product-img-6.jpg">
+              <img src="img/home/product-img-6-mobile.jpg" alt="carmel-img">
+            </picture>
+          </div>
+          <div class="text">
+            <h3 class="f-d-60 f-m-55">יינות
+              <br>כרמל</h3>
+            <div class="hidden">
+              <p class="f-d-20 f-m-30"> מאז 130 שנה שאנחנו לומדים, כל יום מחדש, את האדמה, את האקלים ואת תהליך הפקת היין באזורי הגידול של ישראל</p>
+              <a href="#" class="btn btn-secondary">לצפייה ביינות</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Home Video -->
+  <div class="home-video">
+    <div class="container">
+      <div class="video">
+        <video class="lazy" preload="metadata" loop muted playsinline autoplay data-src="video/home-page-video-comp.mp4">
+          <source type="video/mp4" data-src="video/home-page-video-comp.mp4">
+        </video>
+      </div>
+      <div class="text">
+        <h2 class="f-d-60 f-m-80">
+          מרכז תרבות היין
+          <br>של יקבי כרמל
+        </h2>
+        <p class="f-d-20 f-m-34">, מרכז תרבות היין הינו מרכז חוויתי המשלב סיורים
+          סדנאות וטעימות יין ביקב ההיסטורי, הפותח שעריו ומציג את
+          הסיפור המרתק מראשית תעשיית היין בישראל ועד העולם
+         החדש של היין כיום</p>
+        <a href="#" class="btn btn-primary">להזמנת סיור</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- News Slider -->
+  <div class="news-slider">
+    <div class="container">
+      <!-- Heading -->
+      <div class="heading">
+        <h2 class="f-d-60 f-m-75">חדשות ועדכונים</h2>
+        <div class="d-desktop">
+          <a href="#" class="link-black f-d-18 medium d-desktop">לכל הכתבות <img src="img/icons/arrow-left-black.svg" alt="carmel-img"></a>
+        </div>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <div>
+              <div class="img">
+                <img src="img/home/news-img-1.jpg" alt="carmel-img">
+              </div>
+              <div class="text bg-purple">
+                <p class="f-d-16 f-m-28">חדשות ועדכונים</p>
+                <h3 class="f-d-32 f-m-50">חובבי היין הטבעוניים 
+                  !יכולים להרים לחיים</h3>
+                <a href="#" class="link-white f-d-20 f-m-30 medium">לסרטון פרסומת המלא <img src="img/icons/arrow-left-white-short.svg" alt="carmel-img"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <div>
+              <div class="img">
+                <img src="img/home/news-img-2.jpg" alt="carmel-img">
+              </div>
+              <div class="text bg-green">
+                <p class="f-d-16 f-m-28">חדשות ועדכונים</p>
+                <h3 class="f-d-32 f-m-50">יקבי כרמל
+                  הזוכים בפרס היין הישראלי הטוב
+                  !ביותר בישראל</h3>
+              </div>
+            </div>
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <div>
+              <div class="img">
+                <img src="img/home/news-img-3.jpg" alt="carmel-img">
+              </div>
+              <div class="text bg-gray">
+                <h3 class="f-d-32 f-m-50">חובבי היין הטבעוניים 
+                  !יכולים להרים לחיים</h3>
+                  <a href="#" class="link-black f-d-20 f-m-30 medium">לכתבה מלאה <img src="img/icons/arrow-left-black.svg" alt="carmel-img"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-arrows">
+          <div class="prev"><img src="img/icons/arrow-long-right-black.svg" alt="carmel-img"></div>
+          <div class="next"><img src="img/icons/arrow-long-left-black.svg" alt="carmel-img"></div>
+        </div>
+        <div class="swiper-pagination d-desktop"></div>
+      </div>
+      <!-- Button -->
+      <div class="text-center d-mobile">
+        <a href="#" class="btn btn-secondary">לכל הכתבות <img src="img/icons/arrow-left-black.svg" alt="carmel-img"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home Links -->
+  <div class="home-links">
+    <div class="container">
+      <ul>
+        <!-- Item -->
+        <li>
+          <div class="img">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/home-links-img-1.jpg">
+              <img src="img/home/home-links-img-1-mobile.jpg" alt="carmel-img">
+            </picture>
+          </div>
+          <div class="text">
+            <div>
+              <h2 class="f-d-35 f-m-42 medium text-gold">חדש יקב כרמל</h2>
+              <p class="f-d-20 f-m-30 light"> איפסום דולור סיט אמט, קונסקטורר<br><br></p>
+            </div>
+            <a href="#">
+              <img src="img/icons/arrow-link-right.svg" alt="carmel-img">
+            </a>
+          </div>
+        </li>
+        <!-- Item -->
+        <li>
+          <div class="img">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/home-links-img-2.jpg">
+              <img src="img/home/home-links-img-2-mobile.jpg" alt="carmel-img">
+            </picture>
+          </div>
+          <div class="text">
+            <div>
+              <h2 class="f-d-35 f-m-42 medium text-gold">?נתקלתם בבעיה</h2>
+              <p class="f-d-20 f-m-30 light">
+                ?יש לכם שאלה ולא יודעים למי לפנות
+                שירות הלקוחות שלנו עומד לשירותכם
+              </p>
+            </div>
+            <a href="#">
+              <img src="img/icons/arrow-link-left.svg" alt="carmel-img">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Top -->
+      <div class="footer-top">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <a href="#">
+            <img src="img/global/logo.svg" alt="carmel-img">
+          </a>
+        </div>
+        <!-- Links -->
+        <div class="footer-links">
+          <!-- Accordion -->
+          <div class="accordion">
+            <!-- Collapsible -->
+            <div class="collapsible">
+              <!-- Toggler -->
+              <div class="collapse-toggler f-d-20 f-m-42 bold">
+                עמוד הבית
+                <div class="simbol">
+                  <div class="plus">+</div>
+                  <div class="minus">-</div>
+                </div>
+              </div>
+              <!-- Collapse -->
+              <div class="collapse">
+                <div>
+                  <ul class="f-d-18 f-m-32">
+                    <!-- Item -->
+                    <li>
+                      <a href="#">רכישה</a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#">חדשות ועדכונים</a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#">צור קשר</a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#">דרושים</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Collapsible -->
+            <div class="collapsible">
+              <!-- Toggler -->
+              <div class="collapse-toggler f-d-20 f-m-42 bold">
+                קטלוג המוצרים
+                <div class="simbol">
+                  <div class="plus">+</div>
+                  <div class="minus">-</div>
+                </div>
+              </div>
+              <!-- Collapse -->
+              <div class="collapse">
+                <div>
+                  <ul class="f-d-18 f-m-32">
+                    <!-- Item -->
+                    <li>
+                      <a href="#">יינות שולחניים</a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#">יינות פרימיום</a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#">בירה</a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#">אלכוהול</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Collapsible -->
+            <div class="collapsible">
+              <!-- Toggler -->
+              <div class="collapse-toggler f-d-20 f-m-42 bold">
+                מרכז התרבות היין
+                <div class="simbol">
+                  <div class="plus">+</div>
+                  <div class="minus">-</div>
+                </div>
+              </div>
+              <!-- Collapse -->
+              <div class="collapse">
+                <div>
+                  <ul class="f-d-18 f-m-32">
+                    <!-- Item -->
+                    <li>
+                      <a href="#">סיורים</a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#">הזמינת סיור</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Collapsible -->
+            <div class="collapsible">
+              <!-- Toggler -->
+              <div class="collapse-toggler f-d-20 f-m-42 bold">
+                אודות
+                <div class="simbol">
+                  <div class="plus">+</div>
+                  <div class="minus">-</div>
+                </div>
+              </div>
+              <!-- Collapse -->
+              <div class="collapse">
+                <div>
+                  <ul class="f-d-18 f-m-32">
+                    <!-- Item -->
+                    <li>
+                      <a href="#">מי אנחנו</a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#">חזון</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Collapsible -->
+            <div class="collapsible">
+              <!-- Toggler -->
+              <div class="collapse-toggler f-d-20 f-m-42 bold">
+                תקנון האתר
+                <div class="simbol">
+                  <div class="plus">+</div>
+                  <div class="minus">-</div>
+                </div>
+              </div>
+              <!-- Collapse -->
+              <div class="collapse">
+                <div>
+                  <ul class="f-d-18 f-m-32">
+                    <!-- Item -->
+                    <li>
+                      <a href="#">מדיניות פרטיות</a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#">הצהרת נגישות</a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#">תנאי שימוש</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social -->
+        <div class="social">
+          <ul>
+            <!-- Item -->
+            <li>
+              <a href="#"><img src="img/icons/facebook.svg" alt="carmel-img"></a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#"><img src="img/icons/linkedin.svg" alt="carmel-img"></a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#"><img src="img/icons/twitter.svg" alt="carmel-img"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p class="f-d-16 f-m-26">‏2021 @Carmel כל הזכויות שמורות ל</p>
+        <a href="https://portfolio.elevate.co.il/" class="f-d-16 f-m-26" target="_blank">elevate digital studio | עיצוב ופיתוח</a>
+      </div>
+    </div>
+  </footer>
 
   <!-- Script (Vendor) -->
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/gsap.min.js"></script>
 
   <!-- Script -->
+  <script src="js/elevate-framework.js"></script>
   <script src="js/app.js"></script>
+
+  <!-- Lazy Loading -->
+  <script src="js/lazyload.min.js"></script>
+  <script>
+    (function () {
+      ll = new LazyLoad({});
+    })();
+  </script>
 
 </body>
 

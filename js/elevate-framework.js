@@ -79,3 +79,38 @@ if (accordions) {
     });
   })
 }
+
+/* #Dropdown
+    ======================================================= */
+const dropdowns = document.querySelectorAll('.dropdown');
+
+if (dropdowns) {
+  dropdowns.forEach((dropdown) => {
+    if (window.innerWidth > 1024) {
+      // Hover
+      if (dropdown.classList.contains('hover')) {
+        dropdown.addEventListener('mouseover', (e) => {
+          dropdown.classList.add('show');
+        });
+        dropdown.addEventListener('mouseout', (e) => {
+          dropdown.classList.remove('show');
+        });
+        // Click
+      } else {
+        dropdown.addEventListener('click', (e) => {
+          if (e.target.closest('.dropdown-toggler')) {
+            e.preventDefault();
+            dropdown.classList.toggle('show');
+          }
+        });
+      }
+    } else {
+      dropdown.addEventListener('click', (e) => {
+        if (e.target.closest('.dropdown-toggler')) {
+          e.preventDefault();
+          dropdown.classList.toggle('show');
+        }
+      });
+    }
+  });
+}
