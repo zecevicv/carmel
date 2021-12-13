@@ -40,8 +40,18 @@ body {
   color: white;
 }
 
+.bg-blue {
+  background-color: #499DC0;
+  color: white;
+}
+
 .bg-green {
   background-color: #459A94;
+  color: white;
+}
+
+.bg-green-light {
+  background-color: #63B275;
   color: white;
 }
 
@@ -86,6 +96,10 @@ body {
   background-color: white;
   color: black;
   box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
+}
+
+.btn.btn-primary:hover {
+  box-shadow: 0 12px 12px rgba(0, 0, 0, .2);
 }
 
 .btn.btn-secondary {
@@ -243,6 +257,15 @@ body {
   position: relative;
 }
 
+.banner .container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 26%;
+}
+
 .banner .img img,
 .banner .img picture {
   max-height: 100vh;
@@ -304,6 +327,11 @@ body {
   padding: 6vw 2vw 4vw 2vw;
 }
 
+/* Subcategory Banner */
+.sub-category-page .banner .container {
+  color: white;
+}
+
 @media (min-width: 1024px) {
   .banner .swiper-pagination {
     color: white;
@@ -320,6 +348,10 @@ body {
 }
 
 @media (max-width: 1023.98px) {
+  .banner .container {
+    width: 85%;
+  }
+
   .banner .text {
     bottom: 18.66vw;
     right: 0;
@@ -369,6 +401,12 @@ body {
     width: 94.6%;
     padding: 8.3vw 5.33vw 6.3vw 5.33vw;
   }
+
+  /* Subcategory Banner */
+  .sub-category-page .banner .container {
+    top: 37%;
+  }
+
 }
 
 /* #Home Products
@@ -938,12 +976,12 @@ body {
 .categories ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -1.5vw;
+  margin: -1.5vw;
 }
 
 .categories ul li {
   flex: 0 0 33.33333%;
-  padding: 0 1.5vw;
+  padding: 1.5vw;
 }
 
 .categories .category-img img {
@@ -957,6 +995,17 @@ body {
 
 .categories .category-text a {
   margin-top: 2.6vw;
+}
+
+.categories h2 {
+  margin-bottom: .25vw;
+}
+
+/* Sub Category Page */
+.sub-category-page .categories .container {
+  position: relative;
+  z-index: 10;
+  margin-top: -16.66vw;
 }
 
 @media (max-width: 1023.98px) {
@@ -983,5 +1032,10 @@ body {
   
   .categories .category-text a {
     margin-top: 5.33vw;
+  }
+
+  /* Sub Category Page */
+  .sub-category-page .categories .container {
+    margin-top: -45vw;
   }
 }
