@@ -50,6 +50,16 @@ body {
   color: black;
 }
 
+.bg-red {
+  background-color: #9B3D4B;
+  color: white;
+}
+
+.bg-orange {
+  background-color: #DD613C;
+  color: white;
+}
+
 @media (max-width: 1023.98px) {
   body {
     padding-top: 20vw;
@@ -63,7 +73,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 500px;
+  border-radius: .5vw;
   height: 2.6vw;
   font-size: 1.14vw;
   font-weight: 500;
@@ -82,6 +92,7 @@ body {
   background-color: transparent;
   color: black;
   border: 1px solid black;
+  border-radius: 500px;
 }
 
 .btn.btn-secondary:hover {
@@ -117,6 +128,11 @@ body {
     height: 11.33vw;
     font-size: 4.8vw;
     padding: 0 8vw;
+    border-radius: 1.33vw;
+  }
+
+  .btn.btn-secondary {
+    border-radius: 500px;
   }
 
   .btn img {
@@ -224,6 +240,7 @@ body {
 ================================================== */
 .banner {
   overflow: hidden;
+  position: relative;
 }
 
 .banner .img img,
@@ -241,7 +258,7 @@ body {
 .banner .text {
   position: absolute;
   bottom: 2.76vw;
-  right: 10%;
+  right: 5%;
   color: white;
   background-color: #DD613C;
   width: 28.8vw;
@@ -278,6 +295,13 @@ body {
 
 .banner .swiper-arrows img {
   width: 2vw;
+}
+
+/* Category Banner */
+.category-page .banner .text {
+  bottom: 2vw;
+  background-color: #499DC0;
+  padding: 6vw 2vw 4vw 2vw;
 }
 
 @media (min-width: 1024px) {
@@ -336,6 +360,14 @@ body {
   .banner .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
   .banner .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 2.66vw;
+  }
+
+  /* Category Banner */
+  .category-page .banner .text {
+    bottom: 4.6vw;
+    right: 0;
+    width: 94.6%;
+    padding: 8.3vw 5.33vw 6.3vw 5.33vw;
   }
 }
 
@@ -632,7 +664,7 @@ body {
 /* #Home Links
 ================================================== */
 .home-links {
-  background-color: #F8F2E2;
+  background-color: #FFFDF8;
 }
 
 .home-links ul {
@@ -743,6 +775,7 @@ body {
 ================================================== */
 .news-slider {
   padding: 6.77vw 0 0 0;
+  background-color: #FFFAEE;
 }
 
 .news-slider .container {
@@ -888,5 +921,67 @@ body {
   
   .news-slider .swiper-arrows .prev {
     margin-left: 6.4vw;
+  }
+}
+
+/* #Categories
+================================================== */
+.categories {
+  background-color: #F8F2E2;
+  padding: 4.7vw 0 7.8vw 0;
+}
+
+.categories .container {
+  width: 90%;
+}
+
+.categories ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.5vw;
+}
+
+.categories ul li {
+  flex: 0 0 33.33333%;
+  padding: 0 1.5vw;
+}
+
+.categories .category-img img {
+  width: 100%;
+}
+
+.categories .category-text {
+  text-align: center;
+  padding: 3.65vw 2vw;
+}
+
+.categories .category-text a {
+  margin-top: 2.6vw;
+}
+
+@media (max-width: 1023.98px) {
+  .categories {
+    padding: 5.33vw 0 17.33vw 0;
+  }
+  
+  .categories ul {
+    display: block;
+    margin: 0;
+  }
+  
+  .categories ul li {
+    padding: 0;
+  }
+
+  .categories ul li:not(:last-child) {
+    margin-bottom: 5.33vw;
+  }
+  
+  .categories .category-text {
+    padding: 9.33vw 8vw;
+  }
+  
+  .categories .category-text a {
+    margin-top: 5.33vw;
   }
 }
