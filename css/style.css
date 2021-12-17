@@ -1468,3 +1468,52 @@ body {
     width: 100%;
   }
 }
+
+/* #Rules
+================================================== */
+.rules {
+  background-color: #FFFDF8;
+  padding: 13.5vw 0 3.65vw 0;
+}
+
+.rules .container {
+  width: 46%;
+}
+
+.rules h1 {
+  margin-bottom: 1vw;
+}
+
+.rules ul li {
+  display: flex;
+}
+
+.rules ul li:not(:last-child) {
+  margin-bottom: .5vw;
+}
+
+.rules .num {
+  flex: 0 0 2.6vw;
+}
+
+@media (max-width: 1023.98px) {
+  .rules {
+    padding: 7.33vw 0 26.66vw 0;
+  }
+  
+  .rules .container {
+    width: 90%;
+  }
+  
+  .rules h1 {
+    margin-bottom: 2vw;
+  }
+  
+  .rules ul li:not(:last-child) {
+    margin-bottom: 2vw;
+  }
+  
+  .rules .num {
+    flex: 0 0 9vw;
+  }
+}
