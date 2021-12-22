@@ -27,7 +27,7 @@ if (document.querySelector('.banner .swiper')) {
   }
 }
 
-/* #Banner Slider
+/* #News Slider
   ======================================================= */
 if (document.querySelector('.news-slider .swiper')) {
   new Swiper(".news-slider .swiper", {
@@ -45,6 +45,30 @@ if (document.querySelector('.news-slider .swiper')) {
       },
       1024: {
         slidesPerView: 2.2
+      }
+    }
+  });
+}
+
+/* #Culture Gallery
+  ======================================================= */
+if (document.querySelector('.culture-gallery .swiper')) {
+  new Swiper(".culture-gallery .swiper", {
+    pagination: {
+      el: ".culture-gallery .swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".culture-gallery .next",
+      prevEl: ".culture-gallery .prev",
+    },
+    freeMode: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 'auto',
+      },
+      1024: {
+        slidesPerView: 'auto'
       }
     }
   });

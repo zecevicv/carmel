@@ -118,6 +118,11 @@ body {
   background-color: white;
 }
 
+.btn.btn-tertiary {
+  color: white;
+  background-image: linear-gradient(to left, #DBC558, #8B6B2A);
+}
+
 .link-white,
 .link-black {
   display: inline-flex;
@@ -186,6 +191,10 @@ body {
   justify-content: space-between;
   padding: 1.24vw 2.89vw 1.24vw 4.56vw;
   box-shadow: 0 12px 24px rgba(0, 0, 0, .1);
+  background-image: url('../img/global/header-lines.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
 }
 
 .header-logo img {
@@ -234,12 +243,19 @@ body {
     padding-top: 0;
     background-color: #F8F2E2;
     box-shadow: 0 12px 24px rgba(0, 0, 0, .1);
+    background-image: url('../img/global/header-lines-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    background-size: 33vw auto;
   }
   
   .header .container {
     width: 92%;
     padding: 1.7vw 0;
     box-shadow: none;
+    background-image: none;
+    background-color: transparent;
   }
 
   .header-logo img {
@@ -1735,5 +1751,439 @@ body {
   
   .media-box .text h3 {
     margin-bottom: 2vw;
+  }
+}
+
+/* #Wine Culture Banner
+================================================== */
+.wine-culture-page .banner .text {
+  background-color: #459A94;
+}
+
+@media (min-width: 1024px) {
+  .wine-culture-page .banner .text {
+    bottom: auto;
+    top: 55%;
+    transform: translateY(-50%);
+    padding: 4.16vw 2vw 1vw 2vw;
+  }
+}
+
+/* #Culture Section 1
+================================================== */
+.culture-section-1 {
+  padding: 5.2vw 0;
+  background-color: #F8F2E2;
+}
+
+.culture-section-1 .container {
+  display: flex;
+  align-items: center;
+}
+
+.culture-section-1 .text,
+.culture-section-1 .img {
+  flex: 0 0 50%;
+}
+
+.culture-section-1 .img img {
+  width: 100%;
+}
+
+.culture-section-1 .text {
+  padding: 0 9.27vw 0 7vw;
+}
+
+.culture-section-1 .text h2 {
+  margin-bottom: 1vw;
+}
+
+.culture-section-1 .text h3 {
+  margin-top: 2vw;
+  margin-bottom: 1.3vw;
+}
+
+.culture-section-1 .text .icons {
+  padding-bottom: 1.5vw;
+  margin-bottom: 1.3vw;
+  border-bottom: 1px solid #AA893B;
+}
+
+.culture-section-1 .text .icons ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.culture-section-1 .text .icons li {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.culture-section-1 .text .icons li:not(:last-child) {
+  margin-bottom: 1.3vw;
+}
+
+.culture-section-1 .text .icons img {
+  width: 1.5vw;
+  height: 1.5vw;
+  object-fit: contain;
+  object-position: center;
+  margin-left: .75vw;
+}
+
+.culture-section-1 .text > ul {
+  list-style: initial;
+  padding-right: 15px;
+  margin-bottom: 1.5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .culture-section-1 {
+    padding: 16vw 0 13.33vw 0;
+    background-color: #F8F2E2;
+  }
+  
+  .culture-section-1 .container {
+    display: block;
+  }
+  
+  .culture-section-1 .text {
+    padding: 0 5% 11.33vw 5%;
+  }
+  
+  .culture-section-1 .text h2 {
+    margin-bottom: 4vw;
+  }
+  
+  .culture-section-1 .text h3 {
+    margin-top: 10vw;
+    margin-bottom: 6.66vw;
+  }
+  
+  .culture-section-1 .text .icons {
+    padding-bottom: 6vw;
+    margin-bottom: 6vw;
+  }
+  
+  .culture-section-1 .text .icons ul {
+    display: block;
+  }
+  
+  .culture-section-1 .text .icons li:not(:last-child) {
+    margin-bottom: 6vw;
+  }
+  
+  .culture-section-1 .text .icons img {
+    width: 6.26vw;
+    height: 6.26vw;
+    margin-left: 4.66vw;
+  }
+  
+  .culture-section-1 .text > ul {
+    margin-bottom: 9.33vw;
+  }
+}
+
+/* #Culture Section 2
+================================================== */
+.culture-section-2 {
+  background-color: #F8F2E2;
+}
+
+.culture-section-2 .container {
+  width: 80%;
+}
+
+.culture-section-2 h2 {
+  text-align: center;
+  margin-bottom: 3vw;
+}
+
+.culture-section-2 .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.culture-section-2 .card {
+  flex: 0 0 48%;
+  margin-bottom: 3.125vw;
+  background-color: #FFFAEE;
+}
+
+.culture-section-2 .card h3 {
+  padding: 1.5vw 3.125vw;
+  background-image: url('../img/wine-culture/card-lines.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.culture-section-2 .card .text {
+  padding: 1.3vw 3.125vw 1.8vw 2.6vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.culture-section-2 .card h4 {
+  margin-top: 1.3vw;
+}
+
+.culture-section-2 .card ul {
+  list-style: initial;
+  padding-right: 17px;
+  margin-bottom: 2vw;
+}
+
+.culture-section-2 .card a {
+  margin: 3.125vw auto 0 auto;
+}
+
+.culture-section-2 .card .stats {
+  display: flex;
+  text-align: center;
+}
+
+.culture-section-2 .card .stats > div {
+  flex: 0 0 33.33333%;
+}
+
+.culture-section-2 .card .stats > div:not(:last-child) {
+  border-left: 1px solid black;
+}
+
+.culture-section-2 .swiper-slide img {
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .culture-section-2 .container {
+    width: 90%;
+  }
+  
+  .culture-section-2 h2 {
+    margin-bottom: 8vw;
+  }
+  
+  .culture-section-2 .cards {
+    display: block;
+  }
+  
+  .culture-section-2 .card {
+    margin-bottom: 14.66vw;
+    background-color: transparent;
+  }
+
+  .culture-section-2 .card:last-child {
+    margin-bottom: 0;
+  }
+  
+  .culture-section-2 .card h3 {
+    padding: 6vw;
+  }
+  
+  .culture-section-2 .card .text {
+    padding: 4vw 0 0 0;
+  }
+  
+  .culture-section-2 .card h4 {
+    margin-top: 5.33vw;
+  }
+  
+  .culture-section-2 .card ul {
+    margin-bottom: 6vw;
+  }
+  
+  .culture-section-2 .card a {
+    margin: 8vw auto 0 auto;
+  }
+  
+  .culture-section-2 .card .stats {
+    background-color: #FFFAEE;
+    padding: 4.66vw 0;
+  }
+  
+  .culture-section-2 .card .stats > div {
+    flex: 0 0 33.33333%;
+    padding: 0 6vw;
+    line-height: 1.2;
+  }
+
+  .culture-section-2 .card .stats > div p {
+    margin-bottom: 2vw;
+  }
+}
+
+/* #Culture Gallery
+================================================== */
+.culture-gallery {
+  padding: 6.77vw 0 0 0;
+  background-color: #F8F2E2;
+  overflow: hidden;
+}
+
+.culture-gallery .container {
+  padding-right: 10%;
+}
+
+.culture-gallery .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5.2vw;
+  margin-bottom: 2vw;
+}
+
+.culture-gallery .swiper {
+  margin-right: -1.3vw;
+  padding-bottom: 9.375vw;
+  overflow: visible;
+}
+
+.culture-gallery .swiper-slide {
+  padding: 0 1.3vw;
+}
+
+.culture-gallery .swiper-slide > div {
+  display: flex;
+}
+
+.culture-gallery .swiper-slide .img,
+.culture-gallery .swiper-slide .text {
+  flex: 0 0 50%;
+}
+
+.culture-gallery .swiper-slide .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1.8vw;
+}
+
+.culture-gallery h3 {
+  line-height: 1.1;
+}
+
+.culture-gallery .text a {
+  margin-top: 3vw;
+}
+
+.culture-gallery .swiper-pagination {
+  width: 59.16vw;
+  margin-left: 5.2vw;
+  top: auto;
+  bottom: 7.3vw;
+}
+
+.culture-gallery .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: black;
+}
+
+.culture-gallery .swiper-horizontal>.swiper-pagination-progressbar, .culture-gallery .swiper-pagination-progressbar.swiper-pagination-horizontal {
+  height: 3px;
+}
+
+.culture-gallery .swiper-arrows {
+  display: flex;
+  position: absolute;
+  right: 1.3vw;
+  bottom: 7.2vw;
+}
+
+.culture-gallery .swiper-arrows img {
+  width: 2vw;
+}
+
+.culture-gallery .swiper-arrows .prev {
+  margin-left: 1vw;
+}
+
+.culture-gallery .swiper-arrows .prev,
+.culture-gallery .swiper-arrows .next {
+  cursor: pointer;
+}
+
+.culture-gallery .swiper-slide {
+  width:51.45vw;
+}
+
+.culture-gallery .swiper-slide:nth-child(2n) {
+  width: 24.21vw;
+}
+
+.culture-gallery .swiper-slide:nth-child(3n) {
+  width: 25.93vw;
+}
+
+.culture-gallery .swiper-slide:nth-child(4n) {
+  width: 24.21vw;
+}
+
+.culture-gallery .swiper-slide img {
+  height: 38.33vw;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1023.98px) {
+  .culture-gallery {
+    padding: 17.33vw 0;
+  }
+  
+  .culture-gallery .container {
+    padding-right: 0;
+  }
+  
+  .culture-gallery .heading {
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 8vw;
+  }
+  
+  .culture-gallery .swiper {
+    margin-right: 0;
+    padding-bottom:20vw;
+    padding-right: 0;
+  }
+  
+  .culture-gallery .swiper-slide {
+    padding: 0 2.93vw;
+  }
+  
+  .culture-gallery .swiper-arrows {
+    justify-content: center;
+    right: 0;
+    bottom: 9vw;
+    width: 100%;
+  }
+  
+  .culture-gallery .swiper-arrows img {
+    width: 8.93vw;
+  }
+  
+  .culture-gallery .swiper-arrows .prev {
+    margin-left: 6.4vw;
+  }
+
+  .culture-gallery .swiper-slide {
+    width: 131.73vw;
+  }
+  
+  .culture-gallery .swiper-slide:nth-child(2n) {
+    width: 62vw;
+  }
+  
+  .culture-gallery .swiper-slide:nth-child(3n) {
+    width: 66.4vw;
+  }
+  
+  .culture-gallery .swiper-slide:nth-child(4n) {
+    width: 62vw;
+  }
+
+  .culture-gallery .swiper-slide img {
+    height: 98.13vw;
   }
 }
