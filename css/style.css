@@ -2527,3 +2527,342 @@ body {
     width: 5.33vw;
   }
 }
+
+/* #Contact Page
+================================================== */
+.contact-page .banner .text {
+  background-color: #459A94;
+}
+
+@media (min-width: 1024px) {
+  .contact-page .banner .text {
+    bottom: 2vw;
+    padding: 6vw 2vw 4vw 4.16vw;
+  }
+}
+
+/* #Contact
+================================================== */
+.contact {
+  padding: 4.68vw 0 4.16vw 0;
+  background-color: #F8F2E2;
+}
+
+.contact .container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  flex: 0 0 24.5vw;
+}
+
+.contact-info .icons {
+  margin-top: 1.3vw;
+}
+
+.contact-info .icons li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-info .icons li:not(:last-child) {
+  margin-bottom: 1.3vw;
+}
+
+.contact-info .icons img {
+  width: 1.5vw;
+  height: 1.5vw;
+  object-fit: contain;
+  object-position: center;
+  margin-left: .75vw;
+}
+
+.contact-form {
+  flex: 0 0 37.7vw;
+}
+
+.contact-form .heading {
+  padding: 1.3vw 1.5vw;
+  background-image: url('../img/wine-culture/card-lines.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-form .body {
+  background-color: #FFFAEE;
+  padding: 2vw 3.75vw 2.6vw 3.75vw;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vw;
+}
+
+.contact-form form .row input {
+  flex: 0 0 48%;
+}
+
+.contact-form form input[type="text"],
+.contact-form form select {
+  width: 100%;
+  height: 2.34vw;
+  border-radius: .5vw;
+  background-color: transparent;
+  padding: 0 1.2vw;
+  border: 1px solid rgba(0, 0, 0, .15);
+  color: black;
+}
+
+.contact-form form input[type="text"]::placeholder,
+.contact-form form textarea::placeholder {
+  color: black;
+}
+
+.contact-form form select {
+  margin-bottom: 1vw;
+  appearance: none;
+  background-image: url('../img/icons/chevron-down-gold.svg');
+  background-repeat: no-repeat;
+  background-position: .75vw 50%;
+  background-size: .5vw auto;
+}
+
+.contact-form form textarea {
+  width: 100%;
+  border-radius: .5vw;
+  background-color: transparent;
+  padding: .5vw 1.2vw;
+  border: 1px solid rgba(0, 0, 0, .15);
+  color: black;
+  margin-bottom: .75vw;
+  resize: none;
+}
+
+.contact-form a {
+  margin-top: 2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .contact {
+    padding: 12vw 0 0 0;
+  }
+  
+  .contact .container {
+    width: 90%;
+    display: block;
+  }
+  
+  .contact-info .icons {
+    padding-bottom: 0;
+    margin-bottom: 17.33vw;
+    margin-top: 6vw;
+  }
+  
+  .contact-info .icons ul {
+    display: block;
+  }
+  
+  .contact-info .icons li:not(:last-child) {
+    margin-bottom: 6vw;
+  }
+  
+  .contact-info .icons img {
+    width: 6.26vw;
+    height: 6.26vw;
+    margin-left: 4.66vw;
+  }
+  
+  .contact-form .heading {
+    padding: 5.33vw 6.66vw 6vw 6.66vw;
+  }
+  
+  .contact-form .body {
+    padding: 8vw 6.66vw;
+  }
+  
+  .contact-form form .row {
+    display: block;
+    margin-bottom: 4.66vw;
+  }
+  
+  .contact-form form .row input:not(:last-child) {
+    margin-bottom: 4.66vw;
+  }
+  
+  .contact-form form input[type="text"],
+  .contact-form form select {
+    height: 11.33vw;
+    border-radius: 1.33vw;
+    padding: 0 4vw;
+  }
+  
+  .contact-form form select {
+    margin-bottom: 4.66vw;
+    background-position: 4vw 50%;
+    background-size: 3vw auto;
+  }
+  
+  .contact-form form textarea {
+    width: 100%;
+    border-radius: 1.33vw;
+    padding: 2vw 4vw;
+    margin-bottom: 4vw;
+  }
+  
+  .contact-form a {
+    margin-top: 8vw;
+    width: 100%;
+  }
+}
+
+/* #Checkbox
+================================================== */
+.checkbox input {
+  width: 1.15vw;
+  height: 1.15vw;
+  flex: 0 0 1.15vw;
+  border-radius: .4vw;
+  border-color: #AA893B;
+  position: relative;
+}
+
+.checkbox input:checked {
+  border-color: #AA893B;
+  background-color: transparent;
+  background-image: none;
+}
+
+.checkbox input:checked::after {
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: .75vw;
+  height: .75vw;
+  background-color: #AA893B;
+  border-radius: 0.225vw;
+}
+
+.checkbox label {
+  padding-right: .4vw;
+}
+
+@media (max-width: 1023.98px) {
+  .checkbox input {
+    width: 3.33vw;
+    height: 3.33vw;
+    flex: 0 0 3.33vw;
+    border-radius: .93vw;
+    margin-top: 1vw;
+  }
+  
+  .checkbox input:checked::after {
+    width: 1.8vw;
+    height: 1.8vw;
+    border-radius: 0.4vw;
+  }
+  
+  .checkbox label {
+    padding-right: 2vw;
+  }
+}
+
+/* #Contact Management
+================================================== */
+.contact-management {
+  background-color: #F8F2E2;
+  text-align: center;
+}
+
+.contact-management .container {
+  width: 70%;
+  border-top: 1px solid #AA893B;
+  padding: 4.16vw 12vw 8.85vw 12vw;
+}
+
+.contact-management .heading {
+  margin: 0 auto 2vw auto;
+  width: 24.7vw;
+}
+
+.contact-management ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -2.5vw;
+}
+
+.contact-management ul li {
+  flex: 0 0 33.3333%;
+  margin-bottom: 2.5vw;
+}
+
+.contact-management h3 {
+  position: relative;
+  padding-bottom: .25vw;
+  margin-bottom: .35vw;
+}
+
+.contact-management h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 2vw;
+  background-color: black;
+}
+
+.contact-management ul p:last-child {
+  margin-top: .25vw;
+}
+
+@media (max-width: 1023.98px) {
+  .contact-management .heading {
+    margin: 0 auto 9.33vw auto;
+    width: 90%;
+  }  
+
+  .contact-management .container {
+    width: 95%;
+    padding: 17.33vw 0;
+    border-top: none;
+  }
+  
+  .contact-management ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: -10.66vw;
+  }
+  
+  .contact-management ul li {
+    flex: 0 0 50%;
+    margin-bottom: 10.66vw;
+  }
+  
+  .contact-management h3 {
+    padding-bottom: 1.7vw;
+    margin-bottom: 1.75vw;
+  }
+  
+  .contact-management h3::after {
+    width: 5.33vw;
+  }
+
+  .contact-management ul p:last-child {
+    margin-top: .75vw;
+  }
+}
