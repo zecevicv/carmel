@@ -73,3 +73,32 @@ if (document.querySelector('.culture-gallery .swiper')) {
     }
   });
 }
+
+/* #Hall Of Fame Slider
+  ======================================================= */
+if (document.querySelector('.hall-of-fame .swiper')) {
+  const hallOfFameSliders = document.querySelectorAll('.hall-of-fame .swiper');
+
+  hallOfFameSliders.forEach((slider) => {
+    const prev = slider.querySelector('.prev');
+    const next = slider.querySelector('.next');
+    
+    new Swiper(slider, {
+      centeredSlides: true,
+      loop: true,
+      navigation: {
+        nextEl: next,
+        prevEl: prev,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 5,
+        }
+      }
+    });
+  });
+
+}
