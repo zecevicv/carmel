@@ -660,6 +660,10 @@ body {
 @media (max-width: 1023.98px) {
   .footer {
     padding: 9vw 0 10.66vw 0;
+    background-image: url('../img/global/footer-bg-circle.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   
   .footer .container {
@@ -870,12 +874,59 @@ body {
   flex: 0 0 50%;
 }
 
+.news-slider .swiper-slide .img img {
+  width: 100%;
+}
+
 .news-slider .swiper-slide .text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: 0 1.8vw;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .news-slider .swiper-slide:nth-child(1n) .text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7vw;
+    height: 100%;
+    background-image: url('../img/global/news-slider-bg-circle-1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .news-slider .swiper-slide:nth-child(2n) .text::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7vw;
+    background-image: url('../img/global/news-slider-bg-circle-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .news-slider .swiper-slide .text::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    bottom: -3vw;
+    left: 0;
+    width: 100%;
+    height: 27vw;
+    background-image: url('../img/global/news-slider-bg-circle-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .news-slider h3 {
@@ -1162,6 +1213,55 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 0 1.5vw;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .blog-grid ul li:nth-child(1) .text::after {
+    display: none;
+  }
+  .blog-grid ul li .text::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7vw;
+    background-image: url('../img/global/news-slider-bg-circle-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .blog-grid ul li:nth-child(3) .text::after,
+  .blog-grid ul li:nth-child(7) .text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    width: 7vw;
+    height: 100%;
+    background-image: url('../img/global/news-slider-bg-circle-1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .blog-grid ul li:nth-child(1) .text::after {
+    display: none;
+  }
+  .blog-grid ul li .text::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    bottom: -7vw;
+    left: 0;
+    width: 100%;
+    height: 32vw;
+    background-image: url(../img/global/news-slider-bg-circle-2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .blog-grid ul li:nth-child(1) .text {
@@ -1233,7 +1333,7 @@ body {
   
   /* Text */
   .blog-grid ul li .text {
-    padding: 10.66vw 4.66vw;
+    padding: 8vw 4.66vw 13.33vw 4.66vw;
   }
   
   .blog-grid ul li:nth-child(1) .text {
@@ -1257,11 +1357,40 @@ body {
 .products-page .products {
   background-color: #F8F2E2;
   padding: 8.33vw 0 4.68vw 0;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .products-page .products::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25.98vw;
+    height: 22.18vw;
+    background-image: url('../img/products/bg-circle-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .products-page .products::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20.98vw;
+    height: 12.2vw;
+    background-image: url('../img/products/bg-circle-1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .products-page .products .container {
   width: 90%;
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 /* Sidebar */
@@ -1651,6 +1780,36 @@ body {
 .media-boxes {
   padding-top: 4.68vw;
   background-color: #F8F2E2;
+}
+
+@media (min-width: 1024px) {
+  .media-boxes {
+    background-image: url('../img/about/about-bg-circle-1.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 50vw auto;
+  }
+
+  .media-box:nth-child(2) .text {
+    background-image: url('../img/about/about-bg-circle-2.svg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+  } 
+
+  .media-box:nth-child(3) .text {
+    background-image: url('../img/about/about-bg-circle-3.svg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+
+  .media-box:nth-child(4) .text {
+    background-image: url('../img/about/about-bg-circle-4.svg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
 }
 
 .media-box {
