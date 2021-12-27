@@ -123,6 +123,11 @@ body {
   background-image: linear-gradient(to left, #DBC558, #8B6B2A);
 }
 
+.btn.btn-quintary {
+  color: #AA893B;
+  border: 1px solid #AA893B;
+}
+
 .link-white,
 .link-black {
   display: inline-flex;
@@ -3005,5 +3010,118 @@ body {
 
   .contact-management ul p:last-child {
     margin-top: .75vw;
+  }
+}
+
+/* #Popup 18 Plus
+================================================== */
+.popup-18-plus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .38);
+  z-index: 20000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+}
+
+.popup-18-plus.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-18-plus .popup-content {
+  width: 33.85vw;
+  height: 19.79vw;
+  background-color: #F8F2E2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.popup-18-plus .top {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3.75vw;
+}
+
+.popup-18-plus .top p {
+  margin: .5vw 0 1.5vw 0;
+}
+
+.popup-18-plus .top .btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popup-18-plus .top .btn {
+  padding: 0 2vw;
+  transition: none;
+}
+
+.popup-18-plus .top .btn img {
+  width: 1.7vw;
+  height: 1.7vw;
+  object-fit: contain;
+  object-position: center;
+  margin-right: .5vw;
+}
+
+.popup-18-plus .bottom {
+  text-align: center;
+  border-top: 1px solid #D9D5CB;
+  padding: 1vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .popup-18-plus .popup-content {
+    width: 89%;
+    height: auto;
+  }
+  
+  .popup-18-plus .top {
+    padding: 10vw 8vw;
+  }
+
+  .popup-18-plus .top h2 {
+    margin: 0 auto;
+    line-height: 1.1;
+    width: 75%;
+  }
+  
+  .popup-18-plus .top p {
+    margin: 2.66vw 0 7vw 0;
+  }
+  
+  .popup-18-plus .top .btns {
+    flex-direction: column;
+  }
+  
+  .popup-18-plus .top .btn {
+    width: 100%;
+  }
+
+  .popup-18-plus .top .btn:first-child {
+    margin-bottom: 4vw;
+  }
+  
+  .popup-18-plus .top .btn img {
+    width: 4.8vw;
+    height: 4.8vw;
+    margin-right: 2vw;
+  }
+  
+  .popup-18-plus .bottom {
+    padding: 4vw 0;
   }
 }

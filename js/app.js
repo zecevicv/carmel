@@ -102,3 +102,14 @@ if (document.querySelector('.hall-of-fame .swiper')) {
   });
 
 }
+
+
+/* #Popup 18 Plus
+  ======================================================= */
+if (document.querySelector('.popup-18-plus')) {
+  const popupClose = document.querySelector('.popup-18-plus .popup-close');
+
+  popupClose.addEventListener('click', (e) => {
+    popupClose.closest('.popup-18-plus').classList.remove('show');
+  });
+}
