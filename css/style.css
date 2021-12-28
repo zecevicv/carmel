@@ -628,7 +628,8 @@ body {
 }
 
 .banner .img img,
-.banner .img picture {
+.banner .img picture,
+.banner .img video {
   max-height: 100vh;
   width: 100%;
   object-fit: cover;
@@ -739,6 +740,10 @@ body {
   
   .banner p {
     margin-bottom: 7.33vw;
+  }
+
+  .banner .img video {
+    height: calc(85vh);
   }
 
   .banner .swiper-arrows {
