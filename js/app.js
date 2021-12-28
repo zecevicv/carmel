@@ -1,3 +1,17 @@
+/* #Hamburger
+  ======================================================= */
+const body = document.querySelector('body');
+const header = document.querySelector('.header');
+const headerBtn = document.querySelector('.header-hamburger button');
+
+headerBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  header.classList.toggle('show');
+  body.classList.toggle('no-scroll');
+  headerBtn.classList.toggle('is-active');
+});
+
 /* #Banner Slider
   ======================================================= */
 if (document.querySelector('.banner .swiper')) {
