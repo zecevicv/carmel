@@ -26,9 +26,11 @@
     <div class="container">
       <!-- Hamburger -->
       <div class="header-hamburger d-mobile">
-        <a href="#">
-          <img src="img/icons/hamburger.svg" alt="carmel-img">
-        </a>
+        <button class="hamburger hamburger--slider">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
       <!-- Logo -->
       <div class="header-logo">
@@ -37,52 +39,163 @@
         </a>
       </div>
       <!-- Menu -->
-      <div class="header-menu d-desktop">
+      <div class="header-menu">
+        <!-- Action -->
+        <div class="header-action">
+          <div class="header-language">
+            <select>
+              <option value="1">HEB</option>
+              <option value="2">ENG</option>
+            </select>
+          </div>
+          <div class="header-search">
+            <div class="d-mobile">
+              <form>
+                <input type="text" class="f-m-32" placeholder="חפש יין">
+                <a href="#">
+                  <img src="img/icons/search.svg" alt="carmel-img">
+                </a>
+              </form>
+            </div>
+            <div class="d-desktop">
+              <a href="#">
+                <img src="img/icons/search.svg" alt="carmel-img">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Links -->
         <div class="header-links">
-          <ul class="f-d-20">
-            <!-- Item -->
-            <li>
-              <a href="#">אודות</a>
-            </li>
-            <!-- Item -->
-            <li>
-              <a href="#">מותגי כרמל</a>
-            </li>
-            <!-- Item -->
-            <li>
-              <a href="#">כרמל סיגנצ'ר</a>
-            </li>
-            <!-- Item -->
-            <li>
-              <a href="#">מותגים נוספים</a>
-            </li>
-            <!-- Item -->
-            <li>
-              <a href="#">מרכז התרבות היין</a>
-            </li>
-            <!-- Item -->
-            <li>
-              <a href="#">צור קשר</a>
-            </li>
-            <!-- Item -->
-            <li>
-              <a href="#">חדשות ועדכונים</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- Action -->
-      <div class="header-action">
-        <div class="header-language">
-          <select>
-            <option value="1">HEB</option>
-            <option value="2">ENG</option>
-          </select>
-        </div>
-        <div class="header-search">
-          <a href="#">
-            <img src="img/icons/search.svg" alt="carmel-img">
-          </a>
+          <!-- Accordion -->
+          <div class="accordion">
+            <ul class="header-link-list">
+              <li class="header-link">
+                <!-- Collapsible -->
+                <div class="collapsible">
+                  <!-- Toggler -->
+                  <div class="collapse-toggler f-d-20 f-m-42">
+                    אודות
+                    <div class="simbol">
+                      <div class="plus">+</div>
+                      <div class="minus">-</div>
+                    </div>
+                  </div>
+                  <!-- Collapse -->
+                  <div class="collapse">
+                    <div>
+                      <ul class="f-d-20 f-m-32">
+                        <li>
+                          <a href="#">יינות שולחניים</a>
+                        </li>
+                        <li>
+                          <a href="#">יינות תירוש</a>
+                        </li>
+                        <li>
+                          <a href="#">יינות מתוקים</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header-link">
+                <!-- Collapsible -->
+                <div class="collapsible">
+                  <!-- Toggler -->
+                  <div class="collapse-toggler f-d-20 f-m-42">
+                    יינות כרמל
+                    <div class="simbol">
+                      <div class="plus">+</div>
+                      <div class="minus">-</div>
+                    </div>
+                  </div>
+                  <!-- Collapse -->
+                  <div class="collapse">
+                    <div>
+                      <ul class="f-d-20 f-m-32">
+                        <li>
+                          <a href="#">יינות שולחניים</a>
+                        </li>
+                        <li>
+                          <a href="#">יינות תירוש</a>
+                        </li>
+                        <li>
+                          <a href="#">יינות מתוקים</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header-link">
+                <!-- Collapsible -->
+                <div class="collapsible">
+                  <!-- Toggler -->
+                  <div class="collapse-toggler f-d-20 f-m-42">
+                    כרמל סיגנצ'ר
+                    <div class="simbol">
+                      <div class="plus">+</div>
+                      <div class="minus">-</div>
+                    </div>
+                  </div>
+                  <!-- Collapse -->
+                  <div class="collapse">
+                    <div>
+                      <ul class="f-d-20 f-m-32">
+                        <li>
+                          <a href="#">יינות שולחניים</a>
+                        </li>
+                        <li>
+                          <a href="#">יינות תירוש</a>
+                        </li>
+                        <li>
+                          <a href="#">יינות מתוקים</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header-link">
+                <!-- Collapsible -->
+                <div class="collapsible">
+                  <!-- Toggler -->
+                  <div class="collapse-toggler f-d-20 f-m-42">
+                    מותגים נוספים
+                    <div class="simbol">
+                      <div class="plus">+</div>
+                      <div class="minus">-</div>
+                    </div>
+                  </div>
+                  <!-- Collapse -->
+                  <div class="collapse">
+                    <div>
+                      <ul class="f-d-20 f-m-32">
+                        <li>
+                          <a href="#">יינות שולחניים</a>
+                        </li>
+                        <li>
+                          <a href="#">יינות תירוש</a>
+                        </li>
+                        <li>
+                          <a href="#">יינות מתוקים</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header-link">
+                <a href="#" class="f-d-20 f-m-42">מרכז התרבות היין</a>
+              </li>
+              <li class="header-link">
+                <a href="#" class="f-d-20 f-m-42">צור קשר</a>
+              </li>
+              <li class="header-link">
+                <a href="#" class="f-d-20 f-m-42">חדשות ועדכונים</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
